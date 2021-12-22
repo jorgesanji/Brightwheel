@@ -83,7 +83,7 @@ extension GalleryViewController : UICollectionViewDataSource{
 		
 		let item = output.getItem(at: indexPath.row)
 		cell.title = item.title
-		cell.views = item.views
+		cell.contributorName = item.contributorName
 		cell.image = item.image
 		return cell
 	}

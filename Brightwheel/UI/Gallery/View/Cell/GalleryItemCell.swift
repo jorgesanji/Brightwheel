@@ -19,9 +19,9 @@ class GalleryItemCell : UICollectionViewCell{
 		}
 	}
 	
-	var views : String?{
+	var contributorName : String?{
 		didSet{
-			viewsLabel.text = views
+			comtributorsLabel.text = contributorName
 		}
 	}
 	
@@ -33,7 +33,7 @@ class GalleryItemCell : UICollectionViewCell{
 	
 	@IBOutlet private weak var titleLabel : UILabel!
 	@IBOutlet private weak var imageView : UIImageView!
-	@IBOutlet private weak var viewsLabel : UILabel!
+	@IBOutlet private weak var comtributorsLabel : UILabel!
 	
 	private var gradientLayer : CAGradientLayer!
 

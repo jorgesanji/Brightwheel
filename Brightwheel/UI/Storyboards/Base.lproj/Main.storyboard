@@ -39,7 +39,7 @@
                                                 </imageView>
                                                 <view alpha="0.25" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TJY-jk-bRa">
                                                     <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
-                                                    <color key="backgroundColor" systemColor="labelColor"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JdG-uK-XnI">
                                                     <rect key="frame" x="10" y="10" width="108" height="19"/>
@@ -62,14 +62,14 @@
                                             <constraints>
                                                 <constraint firstAttribute="bottom" secondItem="I8n-EP-eje" secondAttribute="bottom" id="Ara-hH-3uX"/>
                                                 <constraint firstItem="kl1-2G-lRz" firstAttribute="leading" secondItem="Xy7-fu-rN3" secondAttribute="leading" constant="10" id="Db8-vk-GTo"/>
-                                                <constraint firstItem="TJY-jk-bRa" firstAttribute="trailing" secondItem="I8n-EP-eje" secondAttribute="trailing" id="H5n-8u-dlL"/>
-                                                <constraint firstItem="TJY-jk-bRa" firstAttribute="top" secondItem="I8n-EP-eje" secondAttribute="top" id="HKw-Ae-CmY"/>
+                                                <constraint firstItem="TJY-jk-bRa" firstAttribute="width" secondItem="Xy7-fu-rN3" secondAttribute="width" id="Igt-k3-b1d"/>
                                                 <constraint firstItem="I8n-EP-eje" firstAttribute="leading" secondItem="Xy7-fu-rN3" secondAttribute="leading" id="J7M-c8-wiv"/>
                                                 <constraint firstItem="JdG-uK-XnI" firstAttribute="top" secondItem="Xy7-fu-rN3" secondAttribute="top" constant="10" id="MfF-hH-H9C"/>
-                                                <constraint firstItem="TJY-jk-bRa" firstAttribute="bottom" secondItem="I8n-EP-eje" secondAttribute="bottom" id="WCu-v6-YIo"/>
-                                                <constraint firstItem="TJY-jk-bRa" firstAttribute="leading" secondItem="I8n-EP-eje" secondAttribute="leading" id="Xw7-4v-SLG"/>
+                                                <constraint firstItem="TJY-jk-bRa" firstAttribute="centerX" secondItem="Xy7-fu-rN3" secondAttribute="centerX" id="Mho-ID-MLV"/>
                                                 <constraint firstItem="JdG-uK-XnI" firstAttribute="leading" secondItem="Xy7-fu-rN3" secondAttribute="leading" constant="10" id="bcG-IS-gnr"/>
+                                                <constraint firstItem="TJY-jk-bRa" firstAttribute="centerY" secondItem="Xy7-fu-rN3" secondAttribute="centerY" id="brz-vH-3yX"/>
                                                 <constraint firstAttribute="trailing" secondItem="I8n-EP-eje" secondAttribute="trailing" id="d3i-Rs-5R4"/>
+                                                <constraint firstItem="TJY-jk-bRa" firstAttribute="height" secondItem="Xy7-fu-rN3" secondAttribute="height" id="erW-Sk-xuP"/>
                                                 <constraint firstItem="I8n-EP-eje" firstAttribute="top" secondItem="Xy7-fu-rN3" secondAttribute="top" id="lkq-vz-W20"/>
                                                 <constraint firstAttribute="trailing" secondItem="JdG-uK-XnI" secondAttribute="trailing" constant="10" id="oHr-ff-43Z"/>
                                                 <constraint firstAttribute="bottom" secondItem="kl1-2G-lRz" secondAttribute="bottom" constant="5" id="rWh-Wg-iZ5"/>
@@ -77,9 +77,9 @@
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <connections>
+                                            <outlet property="comtributorsLabel" destination="JdG-uK-XnI" id="TBN-Zf-JOO"/>
                                             <outlet property="imageView" destination="I8n-EP-eje" id="XEE-eI-DDT"/>
                                             <outlet property="titleLabel" destination="kl1-2G-lRz" id="Ku1-y5-rZh"/>
-                                            <outlet property="viewsLabel" destination="JdG-uK-XnI" id="pqF-sC-CgI"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -121,9 +121,6 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

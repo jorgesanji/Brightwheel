@@ -7,7 +7,7 @@
 
 protocol DataSource : AnyObject{
 	func getItemCount() -> Int
-	func getItem(at: Int) -> (title : String, views : String, image : String)
+	func getItem(at: Int) -> (title : String, contributorName : String, image : String)
 }
 
 protocol GalleryViewOutput : DataSource {

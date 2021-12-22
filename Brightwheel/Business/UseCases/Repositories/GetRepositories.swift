@@ -19,6 +19,7 @@ final class GetRepositories : BaseUseCase<GitHubResponse>, GetRepositoriesUseCas
 	override func buildUseCaseObservable() -> Observable<GitHubResponse>? {
 		return proxyService!.repository().getRepositories(page: page)?.flatMap({ dataResponse -> Observable<GitHubResponse> in
 			
+			// TODO: Get contributors for each repository
 			let item = dataResponse.items?.map({ repo -> Observable<RepositoryItem>  in
 				var newRepo = repo
 				return self.proxyService!.repository().getContributors(owner: repo.owner.login, repo: repo.name)!.map({ contributors -> RepositoryItem in
@@ -30,6 +31,7 @@ final class GetRepositories : BaseUseCase<GitHubResponse>, GetRepositoriesUseCas
 				)
 			})
 			
+			// TODO: Return GitHubResponse with contributors
 			return Observable.zip(item!).flatMap { repos -> Observable<GitHubResponse> in
 				var newResponse = dataResponse
 				newResponse.items = repos

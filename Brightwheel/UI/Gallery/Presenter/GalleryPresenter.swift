@@ -55,17 +55,17 @@ extension GalleryPresenter : DataSource{
 		return repositories.count
 	}
 	
-	func getItem(at: Int) -> (title : String, views : String, image : String){
+	func getItem(at: Int) -> (title : String, contributorName : String, image : String){
 		
 		retrieveMoreItemsIfNeeded(at: at)
 		
 		let item = repositories[at]
 		
 		let title = item.name
-		let views = item.contributors.count > 0 ? item.contributors[0].login : "empty_contributors".localized
-		let link =  item.contributors.count > 0 ? item.contributors[0].avatar_url : item.owner.avatar_url
+		let contributorName = item.contributors.count > 0 ? item.contributors[0].login : "empty_contributors".localized
+		let image =  item.contributors.count > 0 ? item.contributors[0].avatar_url : item.owner.avatar_url
 		
-		return (title, views, link)
+		return (title, contributorName, image)
 	}
 }
 

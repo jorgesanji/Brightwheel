@@ -11,28 +11,28 @@ import Alamofire
 
 final class RestRepository{
 	
-	fileprivate final let provider:MoyaProvider<BrightwheelServices>
+	fileprivate var provider:MoyaProvider<BrightwheelServices>!
 	fileprivate final let localPrivateStore: LocalDataPrivate
 	fileprivate var authPlugin: AccessTokenPlugin!
 	
 	init(localPrivateStore: LocalDataPrivate) {
 		self.localPrivateStore = localPrivateStore
-		
-		// TODO: Add oauth to alamofire manager
-		/*
-		 self.authPlugin = AccessTokenPlugin(tokenClosure: { TargetType in
-			return localPrivateStore.getAccessToken() ?? ""
-		})
-		 
-		 self.provider = MoyaProvider<BrightwheelServices>(
-			 session: Alamofire.Session.manager(interceptor: nil),
-			 plugins: [authPlugin, NetworkLoggerPlugin()])
-		*/
-		
+		self.addoAuth(false)
+	}
+	
+	private func addoAuth(_ oAuth : Bool){
+		var plugins : [PluginType] = []
+		plugins.append(NetworkLoggerPlugin())
+		if oAuth{
+			// TODO: Add oauth to alamofire manager
+			self.authPlugin = AccessTokenPlugin(tokenClosure: {[weak self] TargetType in
+				return self?.localPrivateStore.getAccessToken() ?? ""
+			})
+			plugins.append(authPlugin)
+		}
 		self.provider = MoyaProvider<BrightwheelServices>(
 			session: Alamofire.Session.manager(interceptor: nil),
-			plugins: [NetworkLoggerPlugin()])
-		
+			plugins: plugins)
 	}
 }
 
