@@ -1,6 +1,6 @@
 //
-//  netquestTests.swift
-//  netquestTests
+//  BrightwheelTests.swift
+//  BrightwheelTestsTests
 //
 //  Created by Jorge Sanmartin on 19/12/21.
 //

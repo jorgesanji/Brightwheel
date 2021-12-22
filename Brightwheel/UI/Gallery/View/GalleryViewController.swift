@@ -1,6 +1,6 @@
 //
 //  GalleryViewController.swift
-//  netquest
+//  Brightwheel
 //
 //  Created by Jorge Sanmartin on 19/12/21.
 //

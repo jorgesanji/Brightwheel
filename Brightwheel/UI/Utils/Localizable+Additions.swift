@@ -1,6 +1,6 @@
 //
 //  Localizable+Additions.swift
-//  netquest
+//  Brightwheel
 //
 //  Created by Jorge Sanmartin on 21/12/21.
 //

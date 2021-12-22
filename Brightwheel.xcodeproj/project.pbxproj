@@ -1003,7 +1003,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jorgeSanmartin.netquestTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jorgeSanmartin.BrightwheelTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -1028,7 +1028,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jorgeSanmartin.netquestTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jorgeSanmartin.BrightwheelTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -1051,12 +1051,12 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jorgeSanmartin.netquestUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jorgeSanmartin.BrightwheelUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = netquest;
+				TEST_TARGET_NAME = Brightwheel;
 			};
 			name = Debug;
 		};
@@ -1074,12 +1074,12 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jorgeSanmartin.netquestUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jorgeSanmartin.BrightwheelUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = netquest;
+				TEST_TARGET_NAME = Brightwheel;
 			};
 			name = Release;
 		};

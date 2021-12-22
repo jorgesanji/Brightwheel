@@ -1,6 +1,6 @@
 //
 //  ApplicationAssembly.swift
-//  netquest
+//  Brightwheel
 //
 //  Created by Jorge Sanmartin on 20/12/21.
 //
