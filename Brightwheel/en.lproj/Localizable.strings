@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  Brightwheel
+
+  Created by Jorge Sanmartin on 21/12/21.
+  
+*/
+
+"app_name" = "Repositories";
+"title_controller" = "Top repositories contributors";
+"empty_contributors" = "There are No contributors or list of the contributors is too big";
+
+"error_loading" = "Check your internet connection, please try again later";
