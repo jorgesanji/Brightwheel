@@ -5,8 +5,6 @@
 //  Created by Jorge Sanmartin on 20/12/21.
 //
 
-import Foundation
-
 final class GalleryPresenter{
 	
 	fileprivate let maxCountRepositories = 100
