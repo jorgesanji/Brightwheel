@@ -5,7 +5,7 @@
 	<key>Crendentials</key>
 	<dict>
 		<key>accessToken</key>
-		<string>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</string>
+		<string>access_token</string>
 	</dict>
 </dict>
 </plist>
